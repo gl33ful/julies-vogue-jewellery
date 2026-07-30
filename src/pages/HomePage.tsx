@@ -55,6 +55,7 @@ export function HomePage() {
             
             src="images/julies-vogue/julies_image.png"
             alt="Woman wearing elegant gold jewelry"
+            loading='eager'
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-ink/55 via-ink/35 to-ink/70" />

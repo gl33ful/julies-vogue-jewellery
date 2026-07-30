@@ -102,7 +102,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-ivory/70">
               <li className="flex items-start gap-2">
                 <MapPin size={16} strokeWidth={1.5} className="mt-0.5 shrink-0 text-champagne-400" />
-                <span>Julies Vogue Jewelry, Uyo, Akwa Ibom, Nigeria</span>
+                <span>Julies Vogue Jewelry,10 Kennedy Ekong Cresent, OsongAma Estate Rd, Uyo 520101, Akwa Ibom, Nigeria</span>
               </li>
               <li className="flex items-start gap-2">
                 <Mail size={16} strokeWidth={1.5} className="mt-0.5 shrink-0 text-champagne-400" />
@@ -118,7 +118,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-ivory/50">
           <p>© {new Date().getFullYear()} Julies Vogue. All rights reserved.</p>
-          <p className="tracking-wider2 uppercase text-[0.65rem]">Crafted with elegance in Nigeria</p>
+          <p className="tracking-wider2 uppercase text-[0.65rem]">Crafted with elegance by EddyWebDesignStudio</p>
         </div>
       </div>
     </footer>
