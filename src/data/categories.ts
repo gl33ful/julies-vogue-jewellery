@@ -6,7 +6,7 @@ export const categories: Category[] = [
     name: "Necklaces",
     slug: "necklaces",
     description: "Elegant necklaces designed to add timeless beauty to every look.",
-    image_url: "/images/julies-vogue/silver_necklace.jpg",
+    image_url: "/images/julies-vogue/gold_necklace.webp",
     sort_order: 1,
   },
   {
@@ -14,7 +14,7 @@ export const categories: Category[] = [
     name: "Earrings",
     slug: "earrings",
     description: "Beautiful earrings crafted for everyday elegance and special moments.",
-    image_url: "/images/julies-vogue/earrings.jpg",
+    image_url: "/images/julies-vogue/black_earring.webp",
     sort_order: 2,
   },
   {
@@ -22,7 +22,7 @@ export const categories: Category[] = [
     name: "Bracelets",
     slug: "bracelets",
     description: "Delicate bracelets that complete your jewelry collection.",
-    image_url: "/images/julies-vogue/bracelets.jpg",
+    image_url: "/images/julies-vogue/bracelet.webp",
     sort_order: 3,
   },
   {
@@ -30,7 +30,15 @@ export const categories: Category[] = [
     name: "Rings",
     slug: "rings",
     description: "Statement rings designed to celebrate your unique style.",
-    image_url: "/images/julies-vogue/rings.jpg",
+    image_url: "/images/julies-vogue/circle_bracelet.webp",
     sort_order: 4,
+  },
+  {
+    id: "5",
+    name: "Watches",
+    slug: "watches",
+    description: "Sophisticated timepieces that blend functionality with luxury.",
+    image_url: "/images/julies-vogue/watch_necklace.webp",
+    sort_order: 5,
   },
 ];

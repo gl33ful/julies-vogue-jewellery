@@ -6,11 +6,11 @@ import { ProductCard } from '@/components/ProductCard';
 import { StarRating } from '@/components/StarRating';
 
 const COLLECTIONS = [
-  { key: 'New Arrivals', blurb: 'The latest additions to the Julies Vogue atelier.', filter: (p: any) => p.is_new, image: '/images/julies-vogue/customer.jpg' },
-  { key: 'Everyday Elegance', blurb: 'Pieces made to be worn from morning to midnight.', filter: (p: any) => p.collection === 'Everyday Elegance', image: '/images/julies-vogue/juliesvogue_jewelry_set_4.webp' },
-  { key: 'Statement Pieces', blurb: 'Bold designs for the moments you want to be seen.', filter: (p: any) => p.collection === 'Statement Pieces', image: '/images/julies-vogue/juliesvogue_jewelry_post_3.webp' },
-  { key: 'Gift Collection', blurb: 'Beautifully packaged, ready to be remembered.', filter: (p: any) => p.collection === 'Gift Collection', image: '/images/julies-vogue/juliesvogue_jewelry_hand.webp' },
-  { key: 'Wedding & Special Moments', blurb: 'Coordinated sets for your most treasured days.', filter: (p: any) => p.collection === 'Wedding & Special Moments', image: '/images/julies-vogue/juliesvogue_jewelry_post_2025-07-15_.webp' },
+  { key: 'New Arrivals', blurb: 'The latest additions to the Julies Vogue atelier.', filter: (p: any) => p.is_new, image: '/images/julies-vogue/gold_necklace2.webp' },
+  { key: 'Everyday Elegance', blurb: 'Pieces made to be worn from morning to midnight.', filter: (p: any) => p.collection === 'Everyday Elegance', image: '/images/julies-vogue/gold_necklace.webp' },
+  { key: 'Statement Pieces', blurb: 'Bold designs for the moments you want to be seen.', filter: (p: any) => p.collection === 'Statement Pieces', image: '/images/julies-vogue/diamondlike_necklace.webp' },
+  { key: 'Gift Collection', blurb: 'Beautifully packaged, ready to be remembered.', filter: (p: any) => p.collection === 'Gift Collection', image: '/images/julies-vogue/necklace_box.webp' },
+  { key: 'Wedding & Special Moments', blurb: 'Coordinated sets for your most treasured days.', filter: (p: any) => p.collection === 'Wedding & Special Moments', image: '/images/julies-vogue/watch_set_combo.webp' },
 ];
 
 const TRUST = [
@@ -31,12 +31,9 @@ const TESTIMONIALS = [
 ];
 
 const INSTA = [
-  'https://images.pexels.com/photos/31757540/pexels-photo-31757540.jpeg?auto=compress&cs=tinysrgb&w=500',
-  'https://images.pexels.com/photos/9509037/pexels-photo-9509037.jpeg?auto=compress&cs=tinysrgb&w=500',
-  'https://images.pexels.com/photos/36324989/pexels-photo-36324989.jpeg?auto=compress&cs=tinysrgb&w=500',
-  'https://images.pexels.com/photos/27257368/pexels-photo-27257368.jpeg?auto=compress&cs=tinysrgb&w=500',
-  'https://images.pexels.com/photos/13152076/pexels-photo-13152076.jpeg?auto=compress&cs=tinysrgb&w=500',
-  '/images/julies-vogue/juliesvogue_jewelry_mannequin_1.webp',
+  '/images/julies-vogue/customer.jpg',
+  '/images/julies-vogue/lady_in_satin.png',
+  '/images/julies-vogue/juliesvogue_jewelry_face.webp',
 ];
 
 export function HomePage() {
@@ -51,13 +48,12 @@ export function HomePage() {
       {/* ===== HERO ===== */}
       <section className="relative h-[100svh] min-h-[640px] flex items-center justify-center animate-fadeHero">
         <div className="absolute inset-0">
-          <img
-            
-            src="images/julies-vogue/julies_image.png"
-            alt="Woman wearing elegant gold jewelry"
-            loading='eager'
-            className="w-full h-full object-cover object-center"
-          />
+            <img
+              src="/images/julies-vogue/julies_image_4.png"
+              alt="Woman wearing elegant gold jewelry"
+              loading='eager'
+              className="w-full h-full object-cover object-center"
+            />
           <div className="absolute inset-0 bg-gradient-to-b from-ink/55 via-ink/35 to-ink/70" />
         </div>
         <div className="relative container-luxe text-center text-ivory z-10 pt-16">
@@ -180,12 +176,12 @@ export function HomePage() {
         <div className="container-luxe grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div className="relative reveal">
             <div className="img-zoom aspect-[4/5] overflow-hidden">
-              <img
-                src="https://images.pexels.com/photos/31757540/pexels-photo-31757540.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Julies Vogue jewelry craftsmanship"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
+            <img
+              src="/images/julies-vogue/juliesvogue_jewelry_face.webp"
+              alt="Julies Vogue jewelry craftsmanship"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
             </div>
             <div className="absolute -bottom-6 -right-6 hidden md:block bg-ink text-ivory p-6 max-w-[220px]">
               <p className="font-serif text-3xl text-champagne-400">100%</p>
@@ -251,7 +247,7 @@ export function HomePage() {
               Tag us and share how you style your Julies Vogue pieces — you might be featured.
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {INSTA.map((src, i) => (
               <a
                 key={i}

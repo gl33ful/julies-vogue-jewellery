@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Heart, ShoppingBag, Truck, RefreshCw, ShieldCheck, ChevronRight, Minus, Plus, Check } from 'lucide-react';
+import { Heart, ShoppingBag, Truck, RefreshCw, ShieldCheck, ChevronRight, ChevronLeft, Minus, Plus, Check } from 'lucide-react';
 import { useProduct, useReviews, useProducts } from '@/lib/hooks';
 import { useRoute, navigate } from '@/lib/router';
 import { formatNaira, wishStore, useWishlist, cartStore, whatsappOrderLink, whatsappChatLink, useReveal } from '@/lib/store';
@@ -95,8 +95,30 @@ export function ProductPage() {
               </button>
             ))}
           </div>
-          <div className="flex-1 aspect-[4/5] bg-cream overflow-hidden">
-            <img src={gallery[activeImg]} alt={product.name} className="w-full h-full object-cover" />
+          <div className="flex-1 aspect-[4/5] bg-cream overflow-hidden relative group">
+            <img src={gallery[activeImg]} alt={product.name} className="w-full h-full object-cover transition-all duration-300" />
+            
+            {gallery.length > 1 && (
+              <>
+                <button
+                  onClick={() => setActiveImg((prev) => (prev === 0 ? gallery.length - 1 : prev - 1))}
+                  className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm text-ink flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white shadow-md"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft size={20} strokeWidth={1.5} />
+                </button>
+                <button
+                  onClick={() => setActiveImg((prev) => (prev === gallery.length - 1 ? 0 : prev + 1))}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm text-ink flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white shadow-md"
+                  aria-label="Next image"
+                >
+                  <ChevronRight size={20} strokeWidth={1.5} />
+                </button>
+                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-black/40 backdrop-blur-sm text-white text-[0.65rem] tracking-wider uppercase rounded-full">
+                  {activeImg === 0 ? 'Studio View' : `On-Body / View ${activeImg + 1}`}
+                </div>
+              </>
+            )}
           </div>
         </div>
 
