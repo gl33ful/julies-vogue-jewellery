@@ -43,25 +43,8 @@ export function ShopPage() {
     return list;
   }, [products, activeCat, sort, onlyNew, onlySale]);
 
-  const activeCatName = categories.find((c) => c.slug === activeCat)?.name;
-
   return (
-    <div className="pt-28 md:pt-32">
-      {/* Banner */}
-      <section className="bg-cream py-14 md:py-20">
-        <div className="container-luxe text-center">
-          <p className="eyebrow mb-4">The Collection</p>
-          <h1 className="font-serif text-4xl md:text-6xl">
-            {activeCatName || 'Shop All Jewelry'}
-          </h1>
-          <p className="mt-5 max-w-xl mx-auto text-ink/60 font-light">
-            {activeCat
-              ? categories.find((c) => c.slug === activeCat)?.description
-              : 'Explore elegant pieces designed to celebrate your beauty, confidence, and unforgettable moments.'}
-          </p>
-        </div>
-      </section>
-
+    <div className="pt-24 md:pt-28">
       {/* Category pills */}
       <section className="border-b border-beige sticky top-16 md:top-20 bg-ivory/95 backdrop-blur z-20">
         <div className="container-luxe py-4 flex items-center gap-2 overflow-x-auto no-scrollbar">

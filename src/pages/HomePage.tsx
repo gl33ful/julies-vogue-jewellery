@@ -58,7 +58,7 @@ export function HomePage() {
         </div>
         <div className="relative container-luxe text-center text-ivory z-10 pt-16">
           <p className="eyebrow !text-champagne-200 mb-6 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
-            Julies Vogue · Fine Jewelry
+            JuliesVogue · Timeless pieces handpicked with you in mind
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl leading-[1.05] max-w-3xl mx-auto animate-fadeUp">
             Jewelry That Completes<br />Your Story
@@ -298,7 +298,7 @@ export function HomePage() {
             Explore the full collection and discover jewelry made to celebrate you.
           </p>
           <button onClick={() => navigate('/shop')} className="btn-gold mt-10">
-            Shop Julies Vogue
+            Shop JuliesVogue
           </button>
         </div>
       </section>

@@ -24,7 +24,7 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-1">
-            <h3 className="font-serif text-2xl text-ivory tracking-wider2 mb-4">JULIES VOGUE</h3>
+            <h3 className="font-serif text-2xl text-ivory tracking-wider2 mb-4">JuliesVogue</h3>
             <p className="text-sm leading-relaxed text-ivory/60 max-w-xs">
               Affordable luxury jewelry for modern women who want elegance, confidence, and timeless
               beauty.
@@ -102,7 +102,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-ivory/70">
               <li className="flex items-start gap-2">
                 <MapPin size={16} strokeWidth={1.5} className="mt-0.5 shrink-0 text-champagne-400" />
-                <span>Julies Vogue Jewelry,10 Kennedy Ekong Cresent, OsongAma Estate Rd, Uyo 520101, Akwa Ibom, Nigeria</span>
+                <span>JuliesVogue Jewelry,10 Kennedy Ekong Cresent, OsongAma Estate Rd, Uyo 520101, Akwa Ibom, Nigeria</span>
               </li>
               <li className="flex items-start gap-2">
                 <Mail size={16} strokeWidth={1.5} className="mt-0.5 shrink-0 text-champagne-400" />
@@ -117,7 +117,7 @@ export function Footer() {
         <div className="hairline my-12 opacity-30" />
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-ivory/50">
-          <p>© {new Date().getFullYear()} Julies Vogue. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} JuliesVogue. All rights reserved.</p>
           <p className="tracking-wider2 uppercase text-[0.65rem]">Crafted with elegance by EddyWebDesignStudio</p>
         </div>
       </div>

@@ -94,7 +94,7 @@ export function AboutPage() {
             Every piece tells a story. Find the one that tells yours.
           </p>
           <button onClick={() => navigate('/shop')} className="btn-gold mt-9">
-            Shop Julies Vogue
+            Shop JuliesVogue
           </button>
         </div>
       </section>

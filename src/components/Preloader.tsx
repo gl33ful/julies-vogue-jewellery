@@ -32,11 +32,11 @@ export function Preloader() {
         </div>
 
         <h1 className="font-serif text-5xl md:text-7xl tracking-[0.35em] text-champagne-400 shimmer">
-          JULIES VOGUE
+          JuliesVogue
         </h1>
 
         <p className="mt-5 uppercase tracking-[0.4em] text-xs text-white/70">
-          Fine Jewelry
+          Timeless pieces handpicked with you in mind
         </p>
 
         <div className="mt-10 w-60 h-[2px] bg-white/10 mx-auto overflow-hidden rounded-full">

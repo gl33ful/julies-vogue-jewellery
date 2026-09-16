@@ -65,14 +65,14 @@ export function Header({ onOpenCart }: { onOpenCart: () => void }) {
                 dark ? 'text-ivory' : 'text-ink'
               }`}
             >
-              JULIES VOGUE
+              JuliesVogue
             </span>
             <span
               className={`hidden md:block text-[0.55rem] tracking-luxe uppercase mt-0.5 transition-colors duration-500 ${
                 dark ? 'text-ivory/70' : 'text-champagne-600'
               }`}
             >
-              Fine Jewelry
+              Timeless pieces handpicked with you in mind
             </span>
           </button>
 
@@ -149,7 +149,7 @@ export function Header({ onOpenCart }: { onOpenCart: () => void }) {
           }`}
         >
           <div className="flex items-center justify-between px-6 py-5 border-b border-beige">
-            <span className="font-serif text-lg tracking-wider2">JULIES VOGUE</span>
+            <span className="font-serif text-lg tracking-wider2">JuliesVogue</span>
             <button onClick={() => setMenuOpen(false)} aria-label="Close menu">
               <X size={22} strokeWidth={1.5} />
             </button>

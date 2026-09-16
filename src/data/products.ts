@@ -333,11 +333,11 @@ export const products: Product[] = [
   },
   {
     id: "w3",
-    name: "Diamond Dream Watch Set",
+    name: "Diamond  Watch Set",
     slug: "diamond-dream-watch-set",
     category_id: "5",
     price: 10000,
-    compare_at_price: 12000,
+    compare_at_price: 10000,
     short_description: "Breathtaking watch with diamond-encrusted details.",
     description: "A masterpiece of jewelry and horology. Features dazzling crystals and a premium gold finish.",
     image_url: "/images/julies-vogue/watch_diamond_necklace.webp",
