@@ -7,7 +7,7 @@ const SHOP_LINKS = [
   { label: 'Earrings', cat: 'earrings' },
   { label: 'Bracelets', cat: 'bracelets' },
   { label: 'Rings', cat: 'rings' },
-  { label: 'Sets', cat: 'sets' },
+  { label: 'Watches', cat: 'watches' },
   { label: 'Gift Items', cat: 'gift-items' },
 ];
 

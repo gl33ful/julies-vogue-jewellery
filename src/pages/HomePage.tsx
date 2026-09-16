@@ -6,11 +6,11 @@ import { ProductCard } from '@/components/ProductCard';
 import { StarRating } from '@/components/StarRating';
 
 const COLLECTIONS = [
-  { key: 'New Arrivals', blurb: 'The latest additions to the Julies Vogue atelier.', filter: (p: any) => p.is_new, image: '/images/julies-vogue/gold_necklace2.webp' },
-  { key: 'Everyday Elegance', blurb: 'Pieces made to be worn from morning to midnight.', filter: (p: any) => p.collection === 'Everyday Elegance', image: '/images/julies-vogue/gold_necklace.webp' },
-  { key: 'Statement Pieces', blurb: 'Bold designs for the moments you want to be seen.', filter: (p: any) => p.collection === 'Statement Pieces', image: '/images/julies-vogue/diamondlike_necklace.webp' },
-  { key: 'Gift Collection', blurb: 'Beautifully packaged, ready to be remembered.', filter: (p: any) => p.collection === 'Gift Collection', image: '/images/julies-vogue/necklace_box.webp' },
-  { key: 'Wedding & Special Moments', blurb: 'Coordinated sets for your most treasured days.', filter: (p: any) => p.collection === 'Wedding & Special Moments', image: '/images/julies-vogue/watch_set_combo.webp' },
+  { key: 'New Arrivals', blurb: 'The latest additions to the Julies Vogue atelier.', filter: (p: any) => p.is_new, image: '/images/julies-vogue/gold_necklace2.webp', link: '/shop' },
+  { key: 'Everyday Elegance', blurb: 'Pieces made to be worn from morning to midnight.', filter: (p: any) => p.collection === 'Everyday Elegance', image: '/images/julies-vogue/gold_necklace.webp', link: '/shop' },
+  { key: 'Statement Pieces', blurb: 'Bold designs for the moments you want to be seen.', filter: (p: any) => p.collection === 'Statement Pieces', image: '/images/julies-vogue/diamondlike_necklace.webp', link: '/shop' },
+  { key: 'Gift Collection', blurb: 'Beautifully packaged, ready to be remembered.', filter: (p: any) => p.collection === 'Gift Collection', image: '/images/julies-vogue/necklace_box.webp', link: '/shop/gift-items' },
+  { key: 'Wedding & Special Moments', blurb: 'Coordinated sets for your most treasured days.', filter: (p: any) => p.collection === 'Wedding & Special Moments', image: '/images/julies-vogue/watch_set_combo.webp', link: '/shop' },
 ];
 
 const TRUST = [
@@ -51,7 +51,9 @@ export function HomePage() {
             <img
               src="/images/julies-vogue/julies_image_4.png"
               alt="Woman wearing elegant gold jewelry"
-              loading='eager'
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               className="w-full h-full object-cover object-center"
             />
           <div className="absolute inset-0 bg-gradient-to-b from-ink/55 via-ink/35 to-ink/70" />
@@ -94,7 +96,7 @@ export function HomePage() {
             {COLLECTIONS.map((c, i) => (
               <button
                 key={c.key}
-                onClick={() => navigate('/shop')}
+                onClick={() => navigate(c.link || '/shop')}
                 className={`group relative overflow-hidden img-zoom reveal ${
                   i === 0 ? 'md:col-span-2 md:row-span-2 aspect-square md:aspect-auto' : 'aspect-[3/4]'
                 }`}

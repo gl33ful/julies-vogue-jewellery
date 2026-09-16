@@ -41,4 +41,12 @@ export const categories: Category[] = [
     image_url: "/images/julies-vogue/watch_necklace.webp",
     sort_order: 5,
   },
+  {
+    id: "6",
+    name: "Gift Items",
+    slug: "gift-items",
+    description: "Curated jewellery combos, beautifully packaged and ready to gift.",
+    image_url: "/images/julies-vogue/necklace_box.webp",
+    sort_order: 6,
+  },
 ];
